@@ -1,0 +1,95 @@
+/* --- Style Sheet --- */
+
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: red;
+}
+
+/* --- 2D TRANSFORMS--- */
+
+/* --- Single --- */
+.translate {
+	-ms-transform: translate(300px, 300px);
+	-webkit-transform: translate(300px, 300px);
+	transform: translate(300px, 300px);
+}
+.rotate {
+	transform: rotate(45deg);
+}
+.scale {
+	transform: scale(0.5, 0.5);
+}
+.skewX {
+	transform: skewX(50deg);
+}
+.skewY {
+	transform: skewY(50deg);
+}
+/* --- Mutiple --- */
+.matrix{
+	matrix(scaleX, SkewY, ScaleY, TranslateX, TranslateY);
+	transform: matrix(2, -0.5, 0, 1, 100, 500);
+}
+
+/* --- 3D TRANSFORMS--- */
+
+/* --- Singel --- */
+
+.rotateX {
+	transform: rotateY(150deg);
+}
+
+/* CSS TRANSITIONS*/
+
+.box:hover {
+	width: 1000px;
+	height: 1000px;
+}
+.grow {
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+}
+.spin {
+
+}
+/* --- CSS ANIMATIONS --- */
+/* --- Be awear the css animation doesn't work in internet explorer under 10 --- */
+@keyframes change {
+	0%{
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
+	25%{
+		background-color: green;
+		left: 0px;
+		top: 300px;
+	}
+	50%{
+		background-color: blue;
+		left: 300px;
+		top: 300px;
+	}
+	75%{
+		background-color: yellow;
+		left: 300px;
+		top: 0px;
+	}
+	100%{
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
+}
+.animate{
+	animation-duration: 5s;
+	animation-name: change;
+	animation-t
+}
+
+
+
+
+
